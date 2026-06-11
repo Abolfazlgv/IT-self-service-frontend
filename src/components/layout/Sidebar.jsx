@@ -64,7 +64,9 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             items-center
           "
         >
-          <NavLink to="/">IT Portal</NavLink>
+          <NavLink onClick={() => setSidebarOpen(false)} to="/">
+            IT Portal
+          </NavLink>
 
           <button className="lg:hidden" onClick={() => setSidebarOpen(false)}>
             <FaTimes size={20} />

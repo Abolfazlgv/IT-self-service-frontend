@@ -5,7 +5,7 @@ function ProtectedRoute() {
   const user = useUserStore((state) => state.user);
 
   if (!user) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/register" replace />;
   }
 
   return <Outlet />;
